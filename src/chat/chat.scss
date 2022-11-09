@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+// @import url(../../assets/fonts/font-min.css);
 
 $green: #86bb71;
 $blue: #94c2ed;
@@ -51,7 +51,7 @@ body {
   ul {
     padding: 20px;
     height: 770px;
-
+    list-style-type: none;
     li {
       padding-bottom: 20px;
     }
@@ -120,7 +120,11 @@ body {
     border-bottom: 2px solid white;
     overflow-y: scroll;
     height: 575px;
-
+    
+    .chat-send{
+      list-style-type: none;
+    }
+    
     .message-data {
       margin-bottom: 15px;
     }

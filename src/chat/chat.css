@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 *,
 *:before,
 *:after {
@@ -46,6 +45,7 @@ body {
 .people-list ul {
   padding: 20px;
   height: 770px;
+  list-style-type: none;
 }
 
 .people-list ul li {
@@ -114,6 +114,10 @@ body {
   border-bottom: 2px solid white;
   overflow-y: scroll;
   height: 575px;
+}
+
+.chat .chat-history .chat-send {
+  list-style-type: none;
 }
 
 .chat .chat-history .message-data {
