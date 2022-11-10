@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--下面三行，本项目坐标 -->
+  <groupId>org.example</groupId>
+  <artifactId>maven</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <packaging>jar</packaging>
+
+  <name>maven</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <!--dependency包含，依赖的项目坐标 -->
+    <dependency>
+      <!-- 1、公司或组织域名倒序+项目名-->
+      <groupId>junit</groupId>
+      <!-- 2、模块名-->
+      <artifactId>junit</artifactId>
+      <!-- 3、版本-->
+      <version>3.8.1</version>
+      <!-- 4、scope依赖的范围
+        1、compile，默认值，适用于所有阶段（开发、测试、部署、运行），本jar会一直存在所有阶段。
+        2、provided，只在开发、测试阶段使用，目的是不让Servlet容器和你本地仓库的jar包冲突 。如servlet.jar。
+        3、runtime，只在运行时使用，如JDBC驱动，适用运行和测试阶段。
+        4、test，只在测试时使用，用于编译和运行测试代码。不会随项目发布。
+        5、system，类似provided，需要显式提供包含依赖的jar,Maven不会在Repository中查找它。
+      -->
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.28</version>
+    </dependency>
+
+  </dependencies>
+</project>
